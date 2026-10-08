@@ -2,11 +2,14 @@
 
 Este projeto tem o objetivo de analisar dados ficcionais do mercado de streaming no Brasil.
 
-## Identificação Acadêmica
+## 👨‍🎓 Identificação Acadêmica
 - **Aluno:** Marcus Filipe Malek Victorino
 - **Curso:** Sistemas de Informação
 - **Disciplina:** Linguagem de Programação — Análise e Visualização de Dados com Python
 - **Professor:** Alexandre Neves Louzada
+
+## 📊 Dashboard
+- **Streamlit:** [Marcus Filipe Malek Victorino](https://projeto-streaming-malek.streamlit.app)
 
 ## 🛠 Tecnologias Utilizadas
 - **Linguagem**: Python 3
