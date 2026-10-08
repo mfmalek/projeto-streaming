@@ -1,69 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto G1 - Tema 21</title>
+    <title>Projeto G1 - Streaming de Música e Filmes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        body {
-            background-color: #f8f9fa;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .hero {
-            background-color: #212529;
+        body { 
+            background-color: #f8f9fa; 
+            color: #212529;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero { 
+            background: linear-gradient(135deg, #1e2229 0%, #111317 100%);
+            color: white; 
+            padding: 3.5rem 2rem; 
+            border-radius: 1rem; 
+            margin-top: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 0.75rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.08) !important;
+        }
+
+        .btn-brand {
+            background-color: #0d6efd;
             color: white;
-            padding: 4rem 2rem;
             border-radius: 0.5rem;
-            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+        .btn-brand:hover {
+            background-color: #0b5ed7;
+            color: white;
+        }
+
+        .kpi-box {
+            background-color: #ffffff;
+            border-left: 4px solid #0d6efd;
+            border-radius: 0.5rem;
+            padding: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .badge-tech {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.2rem;
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .section-header {
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #111317;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="hero text-center shadow">
-            <h1>🎬 Análise de Streaming de Música e Filmes</h1>
-            <p class="lead">Projeto G1 - Linguagem de Programação (Python)</p>
-            <p><strong>Tema 21</strong> - Explorando padrões de consumo, audiência e o mercado digital de streaming.</p>
+
+    <div class="container mb-5">
+        
+        <div class="hero text-center mb-4">
+            <h1 class="display-5 fw-bold mb-3"><i class="fa-solid fa-film text-primary me-2"></i> Análise de Streaming de Música e Filmes</h1>
+            <p class="lead text-light opacity-75">Projeto G1 — Linguagem de Programação (Python)</p>
+            <span class="badge bg-primary px-3 py-2 rounded-pill fs-6 mb-2">Tema 21</span>
+            <p class="small text-muted mt-2 mb-0">
+                <strong>Professor:</strong> Alexandre Neves Louzada &nbsp;|&nbsp; 
+                <strong>Aluno:</strong> [Seu Nome Completo]
+            </p>
         </div>
 
-        <div class="row mt-5">
+        <div class="row g-4 mb-5">
             <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">💻 Código Fonte</h5>
-                        <p class="card-text">Acesso ao repositório contendo arquivos e o Notebook de análise
-                            exploratória.</p>
-                        <a href="https://github.com/mfmalek/projeto-streaming" class="btn btn-outline-dark"
-                            target="_blank">Acessar GitHub</a>
+                <div class="card card-custom shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="fs-1 text-primary mb-2"><i class="fa-brands fa-github"></i></div>
+                        <h5 class="card-title fw-bold">💻 Código Fonte</h5>
+                        <p class="card-text text-muted">Acesso ao repositório completo com scripts, dados e Notebook de análise exploratória.</p>
+                        <a href="https://github.com/SEU-USUARIO/projeto-streaming" class="btn btn-outline-dark w-100" target="_blank">Acessar GitHub</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">📊 Dashboard Interativo</h5>
-                        <p class="card-text">Acesse o painel completo construído utilizando Streamlit Community Cloud.
-                        </p>
-                        <a href="https://projeto-streaming-malek.streamlit.app" class="btn btn-primary"
-                            target="_blank">Acessar Dashboard</a>
+                <div class="card card-custom shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="fs-1 text-primary mb-2"><i class="fa-solid fa-chart-line"></i></div>
+                        <h5 class="card-title fw-bold">📊 Dashboard Interativo</h5>
+                        <p class="card-text text-muted">Acesse a aplicação em tempo real com filtros interativos construídos em Streamlit.</p>
+                        <a href="https://seu-app-streamlit.streamlit.app" class="btn btn-brand w-100" target="_blank">Acessar Dashboard</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">📝 Sobre o Projeto</h5>
-                        <p class="card-text">KPIs estipulados, tratamentos e cruzamento de dados estatísticos rigorosos.
-                        </p>
-                        <a href="#tecnologias" class="btn btn-outline-secondary">Ver Mais</a>
+                <div class="card card-custom shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="fs-1 text-primary mb-2"><i class="fa-solid fa-circle-info"></i></div>
+                        <h5 class="card-title fw-bold">📝 Sobre o Projeto</h5>
+                        <p class="card-text text-muted">KPIs estipulados, perguntas orientadoras e tecnologias aplicadas no desenvolvimento.</p>
+                        <a href="#sobre-detalhes" class="btn btn-outline-secondary w-100">Ver Mais <i class="fa-solid fa-arrow-down ms-1"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="sobre-detalhes" class="bg-white p-4 p-md-5 rounded-3 shadow-sm mb-5">
+            
+            <h3 class="section-header"><i class="fa-solid fa-book-open text-primary me-2"></i> Contextualização & Objetivo</h3>
+            <p class="text-secondary leading-relaxed">
+                Os serviços de streaming transformaram radicalmente a forma como a sociedade consome música, filmes e séries.
+                Este projeto investiga os padrões de consumo digital no Brasil no período de <strong>2015 a 2024</strong>, analisando métricas cruciais como tempo de reprodução, retenção de usuários, horários de pico e faturamento por plataforma.
+            </p>
+
+            <h3 class="section-header mt-5"><i class="fa-solid fa-circle-question text-primary me-2"></i> Perguntas Orientadoras do Setor</h3>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Quais conteúdos possuem maior audiência no mercado?</li>
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Quais gêneros são os preferidos pelo público brasileiro?</li>
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Quais são os horários e períodos de maior pico de acesso?</li>
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Como o consumo evoluiu ao longo do tempo (2015–2024)?</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Qual plataforma apresenta a maior taxa de crescimento?</li>
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Existe relação direta entre avaliação e volume de audiência?</li>
+                        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Quais categorias registram maior retenção de usuários?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="section-header mt-5"><i class="fa-solid fa-gauge-high text-primary me-2"></i> Indicadores Chave (KPIs)</h3>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Total de Reproduções</div>
+                        <small class="text-muted">Métrica de audiência geral acumulada.</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Plataforma Mais Popular</div>
+                        <small class="text-muted">Líder no ranking de participação digital.</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Conteúdo Mais Reproduzido</div>
+                        <small class="text-muted">Título com maior volume absoluto de acessos.</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Receita Total</div>
+                        <small class="text-muted">Indicador de desempenho financeiro bruto.</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Média de Usuários Ativos</div>
+                        <small class="text-muted">Nível de engajamento recorrente da base.</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kpi-box">
+                        <div class="fw-bold text-dark">Gênero Mais Consumido</div>
+                        <small class="text-muted">Mapeamento da preferência cultural dominante.</small>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="tecnologias" class="section-header mt-5"><i class="fa-solid fa-code text-primary me-2"></i> Tecnologias Utilizadas</h3>
+            <div>
+                <span class="badge-tech"><i class="fa-brands fa-python text-primary me-1"></i> Python</span>
+                <span class="badge-tech">Pandas</span>
+                <span class="badge-tech">Plotly</span>
+                <span class="badge-tech">Streamlit</span>
+                <span class="badge-tech">NumPy</span>
+                <span class="badge-tech">Seaborn</span>
+                <span class="badge-tech">SQLite / SQLAlchemy</span>
+                <span class="badge-tech">GitHub Pages</span>
+            </div>
+
+        </div>
+
     </div>
-</body>
 
+    <footer class="text-center py-4 text-muted small border-top bg-white">
+        Projeto Acadêmico — Disciplina de Linguagem de Programação
+    </footer>
+
+</body>
 </html>
