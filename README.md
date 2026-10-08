@@ -8,8 +8,9 @@ Este projeto tem o objetivo de analisar dados ficcionais do mercado de streaming
 - **Disciplina:** Linguagem de Programação — Análise e Visualização de Dados com Python
 - **Professor:** Alexandre Neves Louzada
 
-## 📊 Dashboard
-- **Streamlit:** [Marcus Filipe Malek Victorino](https://projeto-streaming-malek.streamlit.app)
+## 📊 Links
+- **Dashboard:** [Streamlit](https://projeto-streaming-malek.streamlit.app)
+- **Pages:** [GitHub Pages](https://mfmalek.github.io/projeto-streaming/)
 
 ## 🛠 Tecnologias Utilizadas
 - **Linguagem**: Python 3
